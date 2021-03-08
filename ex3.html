@@ -3,14 +3,26 @@
 
 <!--바디를 설명하는 태그는 헤드태그로 묶기로 약속-->
 <head>
-    <title>WEB</title>
+    <title>WEB1 - javaScript</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 
 
 <body> <!--본문은 바디라는 태그로 묶기로 약속함.-->
     <h1><a href = "index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value === 'night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value = 'day';
+    }else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value ='night';  
+    }
+    ">
     <div id="grid">
         <ol><!--ol, ul과 li는 항상 같이사용-->
             <li><a href ="1.html">HTML</a></li>
@@ -19,9 +31,10 @@
         </ol>
 
         <div id="article">
-            <h2>WEB</h2>
-            <p>web 설명하는내용 ㅋ</p>
+            <h2>javaScript</h2>
+                <p>javascript 설명하는내용</p>
         </div>
+
     </div>
 </body>
 

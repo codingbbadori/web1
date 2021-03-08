@@ -1,28 +1,30 @@
 <!doctype html>
 <html>
-
+<!--태그선택자<클래스선택자<아이디선택자  우선순위-->
 <!--바디를 설명하는 태그는 헤드태그로 묶기로 약속-->
 <head>
     <title>WEB1 - css</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body> <!--본문은 바디라는 태그로 묶기로 약속함.-->
     <h1><a href = "index.html">WEB</a></h1>
-    <ol><!--ol, ul과 li는 항상 같이사용-->
-        <li><a href ="1.html">HTML</a></li>
-        <li><a href ="2.html">CSS</a></li>
-        <li><a href ="3.html">JavaScript</a></li>
-    </ol>
+    <div id="grid">
+        <ol><!--ol, ul과 li는 항상 같이사용-->
+            <li><a href ="1.html" >HTML</a></li>
+            <li><a href ="2.html" >CSS</a></li>
+            <!--id 값은 절대 중복되어선 안된다. 그래서 우선순위가 제일 높음.-->
+            <li><a href ="3.html">JavaScript</a></li>
+        </ol>
 
-
-    <h2>CSS</h2>
-    <p>css 설명하는내용 ㅋ</p>
-    <p>asdasdwjekdjalsjdqwiodadklsa</p><!--<p>는 문단나눌때 사용-->
-
-
-    <img src="codecode.jpg" width="300px" height = "300px">
+        <div id="article">
+            <h2>CSS</h2>
+            <p>aasdasdasqwejjnavjnljdkhfjelwjadsn
+            </p><!--<p>는 문단나눌때 사용-->
+        </div>
+    </div>
 </body>
-
+<!-- 반응형 디자인 :  화면크기에 따라 웹페이지가 동작하는것.-->
 </html>
